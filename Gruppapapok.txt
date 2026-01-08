@@ -1,0 +1,12 @@
+goth-messenger/
+├── public/
+│   └── index.html
+├── uploads/
+│   ├── files/
+│   ├── images/
+│   ├── videos/
+│   ├── audio/
+│   └── avatars/
+├── recordings/
+├── server.js
+└── package.json
