@@ -1,0 +1,22 @@
+{
+  "name": "goth-messenger-cloudflare",
+  "version": "1.0.0",
+  "description": "Modern messenger on CloudFlare Workers",
+  "main": "src/index.js",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "d1:create": "wrangler d1 create goth_messenger_db",
+    "d1:execute": "wrangler d1 execute goth_messenger_db --file=./schema.sql",
+    "r2:create": "wrangler r2 bucket create goth-messenger-uploads"
+  },
+  "dependencies": {
+    "@cloudflare/workers-types": "^4.20240208.0",
+    "itty-router": "^5.0.17",
+    "jose": "^5.2.0",
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

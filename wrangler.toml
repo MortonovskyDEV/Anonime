@@ -1,0 +1,14 @@
+name = "goth-messenger"
+compatibility_date = "2024-01-01"
+main = "src/index.js"
+workers_dev = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "goth_messenger_db"
+database_id = "your-database-id-here"
+
+[[r2_buckets]]
+binding = "UPLOADS"
+bucket_name = "goth-messenger-uploads"
+preview_bucket_name = "goth-messenger-uploads-preview"
